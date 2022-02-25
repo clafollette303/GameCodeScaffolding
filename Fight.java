@@ -22,11 +22,11 @@ public class Fight extends Room
 
     public void enemyAttack()
     {
-
+        //enemy will attack the player for a certain amount of damage
     }
 
     public void playerAttack(Weapon weapon)
     {
-
+        //player will attack enemy for a certain amount of damage based on the weapon they are using
     }
 }
