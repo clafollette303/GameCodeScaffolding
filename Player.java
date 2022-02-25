@@ -2,25 +2,25 @@ import java.util.ArrayList;
 
 public class Player extends Character
 {
-    private ArrayList<Item> inventory = new ArrayList<Item>();
+    private ArrayList<Item> inventory;
     private int inventoryCapacity;
     private int karma;
     private Weapon currentWeapon;
 
 
 
-    public Player(String name, String description, double maxHealth, double currentHealth, ArrayList<Item> inventory,  int inventoryCapacity, int karma, Weapon weapon)
+    public Player(String name, String description, double maxHealth, double currentHealth, int inventoryCapacity, int karma, Weapon weapon)
     {
         super(name, description, maxHealth, currentHealth);
         this.inventory = inventory;
         this.inventoryCapacity = inventoryCapacity;
         this.karma = karma;
-
+        inventory = new ArrayList<Item>();
     }
 
-    public Item addToInventory(Item item)
+    public void addToInventory(Item item)
     {
-        return item;
+        //adds an item to inventory array list
     }
 
     public ArrayList<Item> getInventory()
