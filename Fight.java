@@ -5,11 +5,10 @@ public class Fight extends Room
     private final int NUM_ENEMIES;
     private int currentEnemies;
 
-    public Fight(String name, String description, ArrayList<Character> characters, int NUM_NPCS, int NUM_ENEMIES)
+    public Fight(String name, String description, int NUM_NPCS, int NUM_ENEMIES)
     {
-        super(name, description, characters, NUM_NPCS);
+        super(name, description, NUM_NPCS);
         this.NUM_ENEMIES = NUM_ENEMIES;
-        currentEnemies = NUM_ENEMIES;
     }
 
     public int getNUM_ENEMIES()
@@ -17,9 +16,9 @@ public class Fight extends Room
         return NUM_ENEMIES;
     }
 
-    public void setNUM_ENEMIES(int NUM_ENEMIES)
+    public void setCurrentEnemies(int currentEnemies)
     {
-        this.NUM_ENEMIES = NUM_ENEMIES;
+        this.currentEnemies = currentEnemies;
     }
     
     public void startFight()
